@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis no CSS</title>
+    <style>
+        /* :root   -Declara uma variável */
+        * {
+            background-color: white;
+        }
+
+        :root {
+            --cor:red;
+            --bordaArredondada: 4px 8px 12px 6px;
+            --corFundo: linear-gradient( black, red);
+        }
+
+        h1 {
+            color: var(--cor);
+            background: var(--corFundo);
+            border-radius: var(--bordaArredondada);
+        }
+
+        h2 {
+            border: solid var(--cor) 2px;
+            border-radius: var(--bordaArredondada);
+        }
+
+        p {
+            text-shadow: var(--cor) 2px 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Variáveis no CSS</h1>
+    <hr>
+    <h2>Front-End</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+    <h2>Back-End</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe officia eos veritatis ducimus.</p>
+
+</body>
+
+</html>

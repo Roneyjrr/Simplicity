@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+body, h1, h2, p, figure, .links-menu {
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+iframe{
+    max-width: 100%;
+}
+.topo{
+    display: flex;
+    justify-content: space-around;
+}
