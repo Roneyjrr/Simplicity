@@ -94,3 +94,13 @@ a {
     right: 0;
     background-color: var(--cor-clara);
 }
+.destaque{
+    background-image: url(../imagens/fundo-destaque.jpg);
+    height: 35vh;
+    color: var(--cor-clara);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
