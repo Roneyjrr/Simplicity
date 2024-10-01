@@ -130,3 +130,10 @@ a {
 
 }
 /* animation-interation-count: infinite;   animation-direction:alternate; */
+
+.destaque h2{
+    font-size: clamp(2rem, 10vw, 7rem);
+}
+.destaque p{
+    font-size: clamp(1rem, 3vw, 3rem);
+}
