@@ -50,43 +50,48 @@ a {
     font-weight: 800;
     font-size: 1.5rem;
 }
+
 .titulo a {
     background-color: var(--cor-escura);
     color: var(--cor-clara);
     padding: 0.3rem 1rem;
     border-radius: 10px;
 }
-.topo{
+
+.topo {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.titulo-menu a{
+
+.titulo-menu a {
     color: var(--cor-escura);
     font-size: 1.2rem;
     padding: 1rem;
-    
+
     display: inline-block;
 }
 
 .menu a:hover {
     background-color: rgb(221, 219, 228);
-    
+
 }
-.links-menu a{
+
+.links-menu a {
     color: var(--cor-escura);
     font-weight: bold;
     display: flex;
     justify-content: center;
     height: 35px;
 }
+
 .links-menu {
     list-style: none;
     display: none;
 
 }
 
-.links-menu.aberto{
+.links-menu.aberto {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -94,7 +99,8 @@ a {
     right: 0;
     background-color: var(--cor-clara);
 }
-.destaque{
+
+.destaque {
     background-image: url(../imagens/fundo-destaque.jpg);
     height: 35vh;
     color: var(--cor-clara);
@@ -104,3 +110,23 @@ a {
     justify-content: center;
     background-attachment: fixed;
 }
+
+/* Animação no CSS com @keyframes */
+@keyframes animaDestaque {
+    from {
+        opacity: 0;
+        transform: translateY(-500px) scale(0.1) rotateY(360deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY() scale(1) rotateY();
+    }
+}
+
+.destaque h2, .destaque p {
+    animation-name: animaDestaque;
+    animation-duration: 2s;
+
+}
+/* animation-interation-count: infinite;   animation-direction:alternate; */
