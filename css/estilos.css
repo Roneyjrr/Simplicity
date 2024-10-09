@@ -315,6 +315,52 @@ tr:nth-child(even) {
     transform: scale(1);
 }
 
+/* Regras para formulário */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+form div {
+    margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    border: none;
+    padding: 6px;
+    height: 30px;
+    border-radius: 8px;
+}
+
+textarea {
+    height: auto;
+}
+
+button {
+    border: none;
+    background-color: var(--cor-escura);
+    color: var(--cor-clara);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+button:hover, button:focus {
+    background-color: darkblue;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
 @media screen and (min-width: 600px) {
     .titulo-menu {
         display: none;
@@ -322,7 +368,8 @@ tr:nth-child(even) {
 
     /* Exibindo os links do menu */
     .links-menu {
-        display: flex;,
+        display: flex;
+        ,
     }
 
     .menu {
@@ -334,15 +381,16 @@ tr:nth-child(even) {
     }
 }
 
- */
-@media screen and (min-width: 1000px){
+*/ @media screen and (min-width: 1000px) {
+
     /* Aumentamos o tamanho da font size */
     html {
         font-size: 20px;
     }
+
     /* Aumentamos a altura da div.limitador contida no topo (header) */
-    .topo .limitador{
+    .topo .limitador {
         height: 80px;
     }
-    
+
 }
