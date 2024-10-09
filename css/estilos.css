@@ -228,7 +228,7 @@ article address {
 .rodape {
     background-color: var(--cor-escura);
     color: var(--cor-clara);
-    height: 20vh;
+    height: 10vh;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -322,7 +322,7 @@ tr:nth-child(even) {
 
     /* Exibindo os links do menu */
     .links-menu {
-        display: flex;
+        display: flex;,
     }
 
     .menu {
