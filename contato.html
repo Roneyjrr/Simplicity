@@ -47,8 +47,38 @@
                 <div>
                     <label for="nascimento">Data de Nascimento:</label>
                     <input type="date" name="nascimento" id="nascimento">
-                        <!-- type=datetime ou time é usado para horarios -->
+                    <!-- type=datetime ou time é usado para horarios -->
                 </div>
+
+                <!-- INÍCIO HTML PARA CEP/ENDEREÇO -->
+                <div>
+                    <label for="cep">CEP: <br><span id="status"></span></label>
+                    <div id="area-do-cep">
+                        <!-- Usamos inputmode numerica para que
+        o teclado virtual mostre números e para que não seja mostrado botões adicionais no navegador desktop. -->
+                        <input maxlength="9" inputmode="numeric" placeholder="Somente números" type="text" id="cep"
+                            name="cep" required> <br>
+                        <button id="buscar">Buscar</button>
+                    </div>
+                </div>
+                <div class="campos-restantes">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" size="30">
+                </div>
+                <div class="campos-restantes">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div class="campos-restantes">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div class="campos-restantes">
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <!-- /FIM HTML PARA CEP/ENDEREÇO -->
+
                 <div>
                     <label for="tel">Telefone:</label>
                     <input type="telefone" name="telefone" id="telefone">
@@ -65,13 +95,14 @@
                 </div>
                 <div>
                     <label for="mensagem">Mensagem:</label>
-                    <textarea required name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite aqui.."></textarea>
+                    <textarea required name="mensagem" id="mensagem" cols="30" rows="10"
+                        placeholder="Digite aqui.."></textarea>
                     <!-- textarea sempre fecha na mesma linha -->
-                     <!-- "required" deixa o campo obrigatório pra preencher -->
+                    <!-- "required" deixa o campo obrigatório pra preencher -->
                 </div>
                 <button type="submit">Enviar</button>
 
-            
+
             </form>
         </article>
         <!-- form:get fica  envia dados via URL ficam expostos na barra de endereços. Bom pra formulários de busca-->
@@ -84,6 +115,7 @@
         <p>Site desenvolvido para fins educacionais.</p>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 
 </html>

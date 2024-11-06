@@ -350,15 +350,28 @@ button {
     color: var(--cor-clara);
     padding: 15px;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 button:hover, button:focus {
     background-color: darkblue;
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
+#area-do-cep {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cep { width: 50%; }
+
+#buscar { 
+    width: 48%;
+    padding: 8px;
+}
+
+.campos-restantes { display: none; }
 
 @media screen and (min-width: 600px) {
     .titulo-menu {
