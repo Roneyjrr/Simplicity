@@ -124,7 +124,6 @@ aplicamos os ajustes de layout (flex) */
     position: absolute;
     left: 0;
     right: 0;
-
     background-color: var(--cor-clara);
 }
 
