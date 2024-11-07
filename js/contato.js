@@ -9,6 +9,10 @@ const campoEstado = document.querySelector("#estado");
 const botaoBuscar = document.querySelector("#buscar");
 const mensagemStatus = document.querySelector("#status");
 
+//Ativação das máscaras para telefone e CEP
+$(campoTelefone).mask("(00) 0000-0000");
+$(campoCep).mask("00000-000");
+
 //Ouvinte de evento para o botão Buscar
 botaoBuscar.addEventListener("click", async function () {
     //Verificar se o CEP digitado NÃO tem 9 digitos
